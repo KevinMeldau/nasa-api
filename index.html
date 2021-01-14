@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Kevin Meldau</title>
-    <link rel="stylesheet" media="screen" href="vendor/bootstrap.min.css" />
+    <title>NASA API - Kevin Meldau</title>
+    <meta name="description" content="NASA API" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      media="all"
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" media="screen" href="style.css" />
   </head>
   <body>
@@ -11,7 +16,7 @@
       <div class="gradient">
         <div class="border">
           <div class="title-container">
-            <div class="dropdown" id="dropdown">
+            <div class="dropdown">
               <div class="img-container">
                 <img src="images/nasa-logo-web-rgb.png" alt="NASA logo" />
               </div>
@@ -25,7 +30,16 @@
           </div>
           <div class="outer-content-container">
             <div class="inner-content-container">
-              <div class="image-container"></div>
+              <i class="fa fa-caret-left"></i>
+              <div class="image-container">
+                <img
+                  id="photo-of-the-day"
+                  class="photo-of-the-day"
+                  src=""
+                  alt="NASA Photo of the Day"
+                />
+              </div>
+              <i class="fa fa-caret-right"></i>
             </div>
           </div>
         </div>
@@ -34,3 +48,5 @@
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
+
+<!-- API Key - https://api.nasa.gov/planetary/apod?api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy -->
