@@ -36,6 +36,22 @@ function getMarsImages() {
 }
 getMarsImages();
 
+// Left and right navigation
+var previousButton = document.getElementById("previous");
+var nextButton = document.getElementById("next");
+
+previous.addEventListener("click", function () {});
+
+next.addEventListener("click", function () {});
+
+// Dropdown menu
+var imageOfTheDay = document.getElementById("imageOfTheDay");
+var marsImages = document.getElementById("marsImages");
+
+imageOfTheDay.addEventListener("click", function () {});
+
+marsImages.addEventListener("click", function () {});
+
 // Setup an event listener on the left and right buttons
 // Add click event to left and right buttons
 // Checkout CSS keyframes
