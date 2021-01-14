@@ -15,7 +15,6 @@ body {
   height: 100%;
   color: white;
   font-family: "Courier Prime", monospace;
-  /* font-weight: 300; */
 }
 
 h1 {
@@ -23,9 +22,9 @@ h1 {
 }
 
 .img-container {
-  padding: 30px;
+  padding-top: 40px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .img-container img {
@@ -36,7 +35,7 @@ h1 {
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(
-    to right,
+    to bottom,
     rgba(0, 0, 0, 1),
     rgba(0, 0, 0, 0)
   );
@@ -45,84 +44,71 @@ h1 {
 .border {
   width: 95vw;
   height: 92vh;
-  border: 10px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.content-container {
-  /* background-color: rgba(255, 255, 255, 0.1); */
-  min-width: 300px;
-  padding: 20px;
-  min-height: 50vh;
-  font-size: 0.8rem;
-}
-
-.content-container p {
-  margin: 0;
-}
-
-.title-container,
-.content-container {
-  /* justify-content: center; */
-  align-items: center;
+.outer-content-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  min-width: 800px;
+  min-height: 500px;
   position: fixed;
-  /* transform: translate(-50%, -50%); */
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inner-content-container {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  min-width: 750px;
+  min-height: 450px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container {
+  background-color: white;
+  min-width: 700px;
+  min-height: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .title-container {
-  top: 20%;
-  left: 15%;
+  text-align: center;
   font-family: Eclairages;
   text-shadow: 0 0 20px cyan;
   cursor: pointer;
 }
 
-.content-container {
-  top: 35%;
-  left: 27%;
-  color: rgba(255, 255, 255, 0.4);
-}
-
 ul {
-  line-height: 150%;
+  line-height: 200%;
 }
-
-.content-container ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-/* .vl {
-  border-left: 1px solid white;
-  height: 250px;
-  position: fixed;
-  top: 30%;
-  left: 23%;
-  transform: translate(-50%, -50%);
-  opacity: 0.5;
-} */
-/* 
-.margin {
-  margin: 0 10px;
-} */
 
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
+.dropdown h1 {
+  margin: 0;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
   font-family: "Courier Prime", monospace;
-  /* background-color: #f9f9f9; */
-  min-width: 160px;
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-  /* padding: 12px 16px; */
-  /* z-index: 1; */
+  position: fixed;
+  top: 19%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .dropdown-content ul {
@@ -136,4 +122,6 @@ ul {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  position: relative;
+  top: 30px;
 }
