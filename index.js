@@ -1,24 +1,4 @@
-// function getImageOfTheDay() {
-//   fetch(
-//     "https://api.nasa.gov/planetary/apod?api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy"
-//   )
-//     .then((response) => {
-//       return response.json();
-//     })
-//     .then((data) => {
-//       console.log(data.url);
-//       const imageElement = document.getElementById("photo-of-the-day");
-//       imageElement.src = data.url;
-//     })
-//     .catch((error) => {
-//       console.log("ERROR: ", error);
-//     });
-// }
-// getImageOfTheDay();
-
-// My attempt at hooking up the Mars images API
-
-function getMarsImages() {
+function getImageOfTheDay() {
   fetch(
     "https://api.nasa.gov/planetary/apod?api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy"
   )
@@ -34,7 +14,32 @@ function getMarsImages() {
       console.log("ERROR: ", error);
     });
 }
-getMarsImages();
+getImageOfTheDay();
+
+// My attempt at hooking up the Mars images API
+
+// function getMarsImages() {
+//   fetch()
+//   // Same as image per day
+//   "https://api.nasa.gov/planetary/apod?api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy"
+
+//   // Other links I've tried
+//   // "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy"
+//   // "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy"
+//   // "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy"
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data.url);
+//       const imageElement = document.getElementById("photo-of-the-day");
+//       imageElement.src = data.url;
+//     })
+//     .catch((error) => {
+//       console.log("ERROR: ", error);
+//     });
+// }
+// getMarsImages();
 
 // Left and right navigation
 var previousButton = document.getElementById("previous");
