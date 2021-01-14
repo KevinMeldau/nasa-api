@@ -1,5 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face {
+  src: url(fonts/Eclairages.ttf);
+  font-family: Eclairages;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 body {
   padding: 0;
@@ -10,7 +14,7 @@ body {
   background-size: cover;
   height: 100%;
   color: white;
-  font-family: 'Courier Prime', monospace;
+  font-family: "Courier Prime", monospace;
   /* font-weight: 300; */
 }
 
@@ -18,16 +22,30 @@ h1 {
   font-size: 1.3rem;
 }
 
+.img-container {
+  padding: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-container img {
+  width: 5%;
+}
+
 .gradient {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 .border {
   width: 95vw;
   height: 92vh;
-  border: 15px solid rgba(255, 255, 255, 0.1);
+  border: 10px solid rgba(255, 255, 255, 0.1);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -39,6 +57,7 @@ h1 {
   min-width: 300px;
   padding: 20px;
   min-height: 50vh;
+  font-size: 0.8rem;
 }
 
 .content-container p {
@@ -56,18 +75,22 @@ h1 {
 .title-container {
   top: 20%;
   left: 15%;
-  font-family: "Bodoni Moda", serif;
+  font-family: Eclairages;
   text-shadow: 0 0 20px cyan;
+  cursor: pointer;
 }
 
 .content-container {
-  top: 25%;
+  top: 35%;
   left: 27%;
   color: rgba(255, 255, 255, 0.4);
 }
 
-.content-container ul {
+ul {
   line-height: 150%;
+}
+
+.content-container ul {
   list-style-type: none;
   padding: 0;
 }
@@ -85,3 +108,32 @@ h1 {
 .margin {
   margin: 0 10px;
 } */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-family: "Courier Prime", monospace;
+  /* background-color: #f9f9f9; */
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  /* padding: 12px 16px; */
+  /* z-index: 1; */
+}
+
+.dropdown-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dropdown-content a {
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
