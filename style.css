@@ -42,6 +42,7 @@ h1 {
 }
 
 .border {
+  /* position: relative; */
   width: 95vw;
   height: 92vh;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -141,4 +142,24 @@ ul {
 
 .fa:hover {
   color: white;
+}
+
+.text-vertical,
+.text-vertical-bottom {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.text-vertical {
+  position: absolute;
+  writing-mode: vertical-rl;
+  padding-top: 40px;
+  padding-top: 100px;
+}
+
+.text-vertical-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 100px;
 }
