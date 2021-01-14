@@ -43,8 +43,8 @@ h1 {
 
 .border {
   /* position: relative; */
-  width: 95vw;
-  height: 92vh;
+  width: 93vw;
+  height: 90vh;
   border: 1px solid rgba(255, 255, 255, 0.5);
   position: fixed;
   top: 50%;
@@ -148,18 +148,35 @@ ul {
 .text-vertical-bottom {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.5);
+  margin: 0;
 }
 
 .text-vertical {
   position: absolute;
   writing-mode: vertical-rl;
   padding-top: 40px;
-  padding-top: 100px;
+  top: 0;
+  padding-right: 0;
+  /* left: 50; */
+  /* padding-top: 100px; */
 }
 
 .text-vertical-bottom {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding-right: 100px;
+}
+
+.icon-small {
+  padding-bottom: 20px;
+  color: white;
+  font-size: 1rem;
+}
+
+.pointer-none {
+  cursor: auto;
+}
+
+.margin-top {
+  margin-top: 20px;
 }
