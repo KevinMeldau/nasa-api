@@ -161,7 +161,7 @@ ul {
 }
 
 .pointer-none {
-  cursor: auto;
+  cursor: default;
 }
 
 .margin-top {
