@@ -16,24 +16,18 @@ function getImageOfTheDay() {
 }
 getImageOfTheDay();
 
-// My attempt at hooking up the Mars images API
-
 // function getMarsImages() {
-//   fetch()
-//   // Same as image per day
-//   "https://api.nasa.gov/planetary/apod?api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy"
-
-//   // Other links I've tried
-//   // "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy"
-//   // "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy"
-//   // "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy"
+//   fetch(
+//     "https://picsum.photos/v2/list"
+//   )
 //     .then((response) => {
 //       return response.json();
 //     })
 //     .then((data) => {
-//       console.log(data.url);
-//       const imageElement = document.getElementById("photo-of-the-day");
-//       imageElement.src = data.url;
+//       data.forEach((each) => {
+//           const img = document.createElement('img')
+//           img.src = each.url
+//       })
 //     })
 //     .catch((error) => {
 //       console.log("ERROR: ", error);
@@ -42,23 +36,23 @@ getImageOfTheDay();
 // getMarsImages();
 
 // Left and right navigation
-var previousButton = document.getElementById("previous");
-var nextButton = document.getElementById("next");
+// var previousButton = document.getElementById("previous");
+// var nextButton = document.getElementById("next");
 
-previous.addEventListener("click", function () {});
+// previous.addEventListener("click", function () {});
 
-next.addEventListener("click", function () {});
+// next.addEventListener("click", function () {});
 
 // Dropdown menu
-var imageOfTheDay = document.getElementById("imageOfTheDay");
-var marsImages = document.getElementById("marsImages");
+// var imageOfTheDay = document.getElementById("imageOfTheDay");
+// var marsImages = document.getElementById("marsImages");
 
-imageOfTheDay.addEventListener("click", function () {});
+// imageOfTheDay.addEventListener("click", function () {});
 
-marsImages.addEventListener("click", function () {});
+// marsImages.addEventListener("click", function () {});
 
 // Setup an event listener on the left and right buttons
 // Add click event to left and right buttons
 // Checkout CSS keyframes
 
-// <!-- API Key - https://api.nasa.gov/planetary/apod?api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy -->
+// <!-- NASA API Key - https://api.nasa.gov/planetary/apod?api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy -->

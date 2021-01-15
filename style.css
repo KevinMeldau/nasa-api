@@ -1,24 +1,15 @@
-@font-face {
-  src: url(fonts/Eclairages.ttf);
-  font-family: Eclairages;
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 body {
   padding: 0;
   margin: 0;
-  font-size: 16px;
+  font-size: 0.8rem;
   background-image: url("images/space.jpg");
   background-position: 0 -150px;
   background-size: cover;
   height: 100%;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   font-family: "Courier Prime", monospace;
-}
-
-h1 {
-  font-size: 1.3rem;
 }
 
 .img-container {
@@ -42,7 +33,6 @@ h1 {
 }
 
 .border {
-  /* position: relative; */
   width: 93vw;
   height: 90vh;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -82,8 +72,6 @@ h1 {
 
 .title-container {
   text-align: center;
-  font-family: Eclairages;
-  text-shadow: 0 0 20px cyan;
 }
 
 ul {
@@ -102,7 +90,6 @@ ul {
 .dropdown-content {
   display: none;
   position: absolute;
-  font-family: "Courier Prime", monospace;
   position: fixed;
   top: 19%;
   left: 50%;
@@ -118,10 +105,15 @@ ul {
   cursor: pointer;
 }
 
+.dropdown-content a:hover {
+  color: white;
+}
+
 .dropdown:hover .dropdown-content {
   display: block;
   position: relative;
   top: 30px;
+  margin: 20px 0 0 0;
 }
 
 .photo-of-the-day {
@@ -134,7 +126,6 @@ ul {
 }
 
 .fa {
-  color: rgba(255, 255, 255, 0.5);
   padding: 0 20px;
   font-size: 3rem;
   cursor: pointer;
@@ -146,8 +137,6 @@ ul {
 
 .text-vertical,
 .text-vertical-bottom {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
   margin: 0;
 }
 
@@ -157,8 +146,6 @@ ul {
   padding-top: 40px;
   top: 0;
   padding-right: 0;
-  /* left: 50; */
-  /* padding-top: 100px; */
 }
 
 .text-vertical-bottom {
