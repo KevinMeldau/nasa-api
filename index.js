@@ -1,39 +1,40 @@
-function getImageOfTheDay() {
-  fetch(
-    "https://api.nasa.gov/planetary/apod?api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy"
-  )
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data.url);
-      const imageElement = document.getElementById("photo-of-the-day");
-      imageElement.src = data.url;
-    })
-    .catch((error) => {
-      console.log("ERROR: ", error);
-    });
-}
-getImageOfTheDay();
-
-// function getMarsImages() {
+// function getImageOfTheDay() {
 //   fetch(
-//     "https://picsum.photos/v2/list"
+//     "https://api.nasa.gov/planetary/apod?api_key=TMwH0mQYVUz8HClsf21Q31IHtjcL90svDqRnwiKy"
 //   )
 //     .then((response) => {
 //       return response.json();
 //     })
 //     .then((data) => {
-//       data.forEach((each) => {
-//           const img = document.createElement('img')
-//           img.src = each.url
-//       })
+//       console.log(data.url);
+//       const imageElement = document.getElementById("image-of-the-day");
+//       imageElement.src = data.url;
 //     })
 //     .catch((error) => {
 //       console.log("ERROR: ", error);
 //     });
 // }
-// getMarsImages();
+// getImageOfTheDay();
+
+const imageContainer = document.getElementById("main-image-container");
+
+function getMarsImages() {
+  fetch("https://picsum.photos/v2/list/")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      data.forEach((each) => {
+        const img = document.createElement("img");
+        img.src = each.download_url;
+        imageContainer.appendChild(img);
+      });
+    })
+    .catch((error) => {
+      console.log("ERROR: ", error);
+    });
+}
+getMarsImages();
 
 // Left and right navigation
 // var previousButton = document.getElementById("previous");
