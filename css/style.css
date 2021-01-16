@@ -4,7 +4,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 0.8rem;
-  background-image: url("images/space.jpg");
+  background-image: url('/images/space.jpg');
   background-position: 0 -150px;
   background-size: cover;
   height: 100%;
@@ -75,7 +75,7 @@ ul {
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .dropdown h1 {
@@ -83,7 +83,6 @@ ul {
 }
 
 .dropdown-content {
-  display: none;
   position: absolute;
   position: fixed;
   top: 19%;
@@ -121,13 +120,26 @@ ul {
 }
 
 .main-image-container {
-  display: flex;
+  display: none;
   justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.main-image-container img {
-  max-width: 400px;
-  max-width: 200px;
+#imageDiv1 img{
+  width: 500px;
+  height: 300px;
+}
+
+#imageDiv2{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#imageDiv2 img{
+  width: 500px;
+  height: 300px;
 }
 
 .fa {
@@ -157,6 +169,7 @@ ul {
   position: absolute;
   bottom: 0;
   right: 0;
+  padding-right: 50px;
 }
 
 .icon-small {
@@ -171,4 +184,16 @@ ul {
 
 .margin-top {
   margin-top: 20px;
+}
+
+#previous{
+  margin-top: 130px;
+}
+
+#next{
+  margin-top: 130px;
+}
+
+.image-of-the-day-container{
+  text-align: center;
 }
